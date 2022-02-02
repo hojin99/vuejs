@@ -15,6 +15,7 @@ export default {
     return {
       menuList: [
         {index:0, name:'Bind', path:"/bind"},
+        {index:16, name:'Component', path:"/component"},
         {index:1, name:'Event', path:"/event"},
         {index:2, name:'Lifecycle', path:"/lifecycle"},
         {index:3, name:'Watch', path:"/watch"},

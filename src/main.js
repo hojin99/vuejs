@@ -10,10 +10,10 @@ Vue.config.productionTip = false
 // element-ui
 Vue.use(ElementUI);
 
-// Vue.prototype.$msgbox = ElementUI.MessageBox;
-// Vue.prototype.$alert = ElementUI.MessageBox.alert;
-// Vue.prototype.$confirm = ElementUI.MessageBox.confirm;
-// Vue.prototype.$prompt = ElementUI.MessageBox.prompt;
+Vue.prototype.$msgbox = ElementUI.MessageBox;
+Vue.prototype.$alert = ElementUI.MessageBox.alert;
+Vue.prototype.$confirm = ElementUI.MessageBox.confirm;
+Vue.prototype.$prompt = ElementUI.MessageBox.prompt;
 
 new Vue({
   router,

@@ -16,6 +16,7 @@ import Plugin from '@/components/plugin/Plugin.vue';
 import Filter from '@/components/filter/Filter.vue';
 import Vuex from '@/components/vuex/Vuex.vue';
 import Etc from '@/components/etc/Etc.vue';
+import Comp from '@/components/component/Component.vue';
 
 Vue.use(Router);
 
@@ -39,5 +40,6 @@ export default new Router({
         {name:'Filter', path:"/filter", component:Filter},
         {name:'Vuex', path:"/vuex", component:Vuex},
         {name:'Etc', path:"/etc", component:Etc},
+        {name:'Component', path:"/component", component:Comp},
       ]
 })
