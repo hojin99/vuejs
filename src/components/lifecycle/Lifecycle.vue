@@ -1,7 +1,9 @@
 <template>
   <div>
-    
-
+    <li>created, mounted, updated, destroyed</li>
+    <br>    
+    {{message}}
+    <input v-model="message">
   </div>
 </template>
 
@@ -9,7 +11,7 @@
 export default {
   data() {
     return {
-
+        message:"Hello"
     }
   },
   created() {

@@ -10,6 +10,8 @@
   <p>{{message}}</p>
   <label>문자 변경 : </label><input v-model="message">
   <hr>
+
+  
 </div>
 </template>
 
