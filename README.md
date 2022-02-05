@@ -20,5 +20,11 @@ package.json의 scripts를 통해서 실행
 serve - 웹브라우저를 띄워주면, 수정 시 자동 반영 됨  
 
 ## 참조  
+https://kr.vuejs.org/v2/guide/  
+https://kr.vuejs.org/v2/style-guide/  
+https://cli.vuejs.org/guide/  
+https://vue-loader.vuejs.org/guide/  
+https://router.vuejs.org/  
+https://vuex.vuejs.org/guide/  
 
 
