@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-input placeholder="Please Input Text" v-model="message"></el-input>
+    <el-input placeholder="Please Input Text" v-model="message" size="small"></el-input>
     <p>method : {{getMessage()}} </p> 
     <p>method : {{getMessage()}} </p> 
     <p>computed : {{reverseMessage}} </p>

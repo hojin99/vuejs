@@ -1,7 +1,10 @@
 # vuejs
 
 ## 환경
-vue cli를 통한 프로젝트 생성  
+
+* 개발툴 - Visual Studio Code 사용
+
+* vue cli를 통한 프로젝트 생성  
 https://cli.vuejs.org/guide/  
 vue cli 설치  
 `npm install -g @vue/cli`  
