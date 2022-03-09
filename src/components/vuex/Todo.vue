@@ -6,6 +6,9 @@
 </template>
 
 <script>
+import { createNamespacedHelpers } from 'vuex';
+const { mapActions }  = createNamespacedHelpers('todoListStore');
+
 export default {
     data() {
         return {
@@ -23,14 +26,15 @@ export default {
         this.todoItem = JSON.parse(JSON.stringify(this.todo)); // props를 초기화 변수로 사용 (배열, 객체는 참조변수여서 deep copy 필요)
     },
     methods: {
+        ...mapActions(['changeTodoA','deleteTodoA']), // this.$store.dispatch('todoListStore/changeTodo',payload) 대신 this.changeTodo(payload) 사용
         changeTodo() {
-            // 상위 컴포넌트로 이벤트 전달
-            this.$emit('changeTodo', this.todoItem);
+
+            this.changeTodoA(this.todoItem);
         },
         deleteTodo() {
-            // 상위 컴포넌트로 이벤트 전달
-            this.$emit('deleteTodo', this.todoItem);
-        }
+
+            this.deleteTodoA(this.todoItem);
+         },
     }
 
 

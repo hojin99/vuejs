@@ -16,6 +16,7 @@ export default {
       menuList: [
         {index:0, name:'Bind', path:"/bind"},
         {index:16, name:'Component', path:"/component"},
+        {index:14, name:'Vuex', path:"/vuex"},        
         {index:1, name:'Event', path:"/event"},
         {index:2, name:'Lifecycle', path:"/lifecycle"},
         {index:3, name:'Watch', path:"/watch"},
@@ -29,7 +30,6 @@ export default {
         {index:11, name:'Directive', path:"/directive"},
         {index:12, name:'Plugin', path:"/plugin"},
         {index:13, name:'Filter', path:"/filter"},
-        {index:14, name:'Vuex', path:"/vuex"},
         {index:15, name:'Etc', path:"/etc"},
       ],
       activeName: '/bind',

@@ -3,12 +3,13 @@
   <li>v-bind - 단방향 바인딩</li>
   <br>
   <span :title="spanTitle">{{message}}</span>
+  <el-button @click="changeTitle">changeTitle</el-button>
   <br>
-  <button @click="changeText">Change Text</button>
+
   <hr>
   <li>v-model - 양방향 바인딩</li>
   <p>{{message}}</p>
-  <label>문자 변경 : </label><input v-model="message">
+  <label>문자 변경 : </label><el-input v-model="message"></el-input>
   <hr>
 
   
@@ -23,13 +24,11 @@ export default {
     return {
       spanTitle: 'Span 제목입니다.',
       message: '마우스를 올려 놓으면 Tooltip이 나옵니다.',
-
     }
   },
-  // 모듈 내에서 사용할 수 있는 메소드
   methods: {
-    changeText() {
-      this.message='Mouse Over!!';
+    changeTitle() {
+      this.spanTitle = "변경된 Span 제목입니다.";
     }
   }
 
